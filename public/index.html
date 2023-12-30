@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websockets-client</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 2px;
+        }
+
+        .sender {
+            background-color: aquamarine;
+            margin-right: 2rem;
+            padding: 2rem
+        }
+
+        .receiver {
+            background-color: lavenderblush;
+            margin-left: 2rem;
+            padding: 2rem;
+        }
+
+        p {
+            font-size: small;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>websockets-client</h1>
+    <input type="text" id="sendMessage">
+    <input type="button" id="btnSend" value="Send">
+    <div>&nbsp;</div>
+    <div>
+        <button id="createGroup">Create Chat Group</button>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        <button id="joinGroup">Join Group</button>
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        <button id="sendMsgToGroup">Send message to Group</button>
+    </div>
+    <div>&nbsp;</div>
+    <div class="messages">
+        <ul id="list"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
